@@ -8,12 +8,12 @@ body {
     font-family: Arial, sans-serif;
 }
 
-#imageDisplay {
-    max-width: 90%;
-    max-height: 70%;
-    transition: transform 0.5s;
+#content {
+    text-align: center;
 }
 
-.glitch {
-    filter: contrast(150%) hue-rotate(30deg);
+img {
+    max-width: 90%;
+    height: auto;
+    transition: transform 0.3s;
 }
