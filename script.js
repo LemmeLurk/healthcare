@@ -49,4 +49,4 @@ document.getElementById("nextButton").addEventListener("click", () => {
         }
         displayItem();
     }, Math.random() * 5000 + 2000); // Random
-});
+})
