@@ -1,6 +1,6 @@
 let currentPile = "A";
 let imagesA = ["pileA_image1.png", "pileA_image2.png", "pileA_image3.png", "pileA_image4.png",  "pileA_image5.png",  "pileA_image6.png"]; // Add your image paths
-let imagesB = ["pileB_image1.jpeg", "pileB_image2.jpeg", "pileB_image3.jpeg", "pileB_image4.jpeg", "pileB_image5.png",  "pileB_image6.png", ]; // Add your image paths
+let imagesB = ["pileB_image1.jpg", "pileB_image2.jpg", "pileB_image3.jpg", "pileB_image4.jpg", "pileB_image5.jpg",  "pileB_image6.jpg", ]; // Add your image paths
 let textsC = ["Text 1", "Text 2", "Text 3", "Text 4"]; // Add your text items
 let displayCount = 0;
 
@@ -49,3 +49,4 @@ document.getElementById("nextButton").addEventListener("click", () => {
         }
         displayItem();
     }, Math.random() * 5000 + 2000); // Random
+});
