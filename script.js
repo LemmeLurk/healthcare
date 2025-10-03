@@ -1,6 +1,6 @@
 let currentPile = "A";
-let imagesA = ["pileA/image1.png", "pileA/image2.png", "pileB/image3.png", "pileB/image4.png"]; // Add your image paths
-let imagesB = ["pileB/image1.jpeg", "pileB/image2.jpeg", "pileB/image3.jpeg", "pileB/image4.jpeg"]; // Add your image paths
+let imagesA = ["pileA_image1.png", "pileA_image2.png", "pileA_image3.png", "pileA_image4.png",  "pileA_image5.png",  "pileA_image6.png"]; // Add your image paths
+let imagesB = ["pileB_image1.jpeg", "pileB_image2.jpeg", "pileB_image3.jpeg", "pileB_image4.jpeg", "pileB_image5.png",  "pileB_image6.png", ]; // Add your image paths
 let textsC = ["Text 1", "Text 2", "Text 3", "Text 4"]; // Add your text items
 let displayCount = 0;
 
