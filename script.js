@@ -35,9 +35,9 @@ function displayItem() {
 document.getElementById("nextButton").addEventListener("click", () => {
     const flipResult = flipCoin();
     if (flipResult === "heads") {
-        currentPile = currentPile === "A" ? "A" : "B"; // Stay in current pile
+        currentPile = currentPile; // Stay in current pile
     } else {
-        currentPile = currentPile === "A" ? "B" : "C"; // Switch to other
+        currentPile = currentPile === "A" ? "B" : "C"; // Switch to other pile
     }
 
     displayItem();
@@ -48,5 +48,6 @@ document.getElementById("nextButton").addEventListener("click", () => {
             currentPile = flipCoin() === "heads" ? "A" : "B"; // Reset back to A or B
         }
         displayItem();
-    }, Math.random() * 5000 + 2000); // Random
-})
+    }, Math.random() * 5000 + 2000); // Random delay between 2-7 seconds
+});
+
