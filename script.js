@@ -1,3 +1,4 @@
+const IMAGES = 17;
 let currentPile = '';
 let displayCount = 0;
 let count2 = 0;
@@ -34,7 +35,7 @@ function getPileBasedOnTime() {
 
 function loadContent(pile) {
     toggleDisplay('on');
-    const imageSrc = `./pile${pile}_image${Math.floor(Math.random() * 6)}.jpg`; // replace with logic to randomize image
+    const imageSrc = `./pile${pile}_image${Math.floor(Math.random() * IMAGES)}.jpg`; // replace with logic to randomize image
     document.getElementById('display').src = imageSrc;
     displayCount++;
 }
