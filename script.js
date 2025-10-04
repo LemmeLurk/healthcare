@@ -1,5 +1,6 @@
 let currentPile = '';
 let displayCount = 0;
+let count2 = 0;
 
 function toggleDisplay(toggle) {
     const element = document.getElementById('display');
@@ -21,7 +22,7 @@ function loadContent(pile) {
 function displayText() {
     toggleDisplay('off');
     //const text = `Pile C Text: Example ${Math.random()}`; // Replace this with your text logic
-    document.getElementById('textDisplay').innerText = text.split('---')[0];
+    document.getElementById('textDisplay').innerText = text.split('---')[++count2];
 }
 
 document.getElementById('display').addEventListener('click', () => {
