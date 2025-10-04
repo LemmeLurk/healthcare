@@ -1,20 +1,25 @@
 let currentPile = '';
 let displayCount = 0;
 
+function toggleDisplay(toggle) {
+    const element = document.getElementById('display');
+    element.style.display = (toggle === 'off') ? 'none' : 'block';
+}
+
 function getPileBasedOnTime() {
     const currentTime = new Date();
     return (currentTime.getSeconds() % 2 === 0) ? 'A' : 'B';
 }
 
 function loadContent(pile) {
-    document.getElementById('display').style.visibility = 'visible';
+    toggleDisplay('on');
     const imageSrc = `./pile${pile}_image${Math.floor(Math.random() * 6)}.jpg`; // replace with logic to randomize image
     document.getElementById('display').src = imageSrc;
     displayCount++;
 }
 
 function displayText() {
-    document.getElementById('display').style.visibility = 'hidden';
+    toggleDisplay('off');
     //const text = `Pile C Text: Example ${Math.random()}`; // Replace this with your text logic
     document.getElementById('textDisplay').innerText = text.split('---')[0];
 }
