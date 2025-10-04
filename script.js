@@ -42,7 +42,7 @@ function loadContent(pile) {
 function displayText() {
     toggleDisplay('off');
     //const text = `Pile C Text: Example ${Math.random()}`; // Replace this with your text logic
-    document.getElementById('textDisplay').innerText = text[Math.floor(Math.random() * text.length];
+    document.getElementById('textDisplay').innerText = text[Math.floor(Math.random() * text.length)];
 }
 
 document.getElementById('display').addEventListener('click', () => {
