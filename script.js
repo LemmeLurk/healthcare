@@ -17,7 +17,7 @@ function displayText() {
     document.getElementById('textDisplay').innerText = text;
 }
 
-document.getElementById('next').addEventListener('click', () => {
+document.getElementById('display').addEventListener('click', () => {
     if (displayCount < 2) {
         currentPile = getPileBasedOnTime();
         loadContent(currentPile);
