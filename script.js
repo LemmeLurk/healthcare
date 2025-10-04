@@ -15,7 +15,7 @@ function loadContent(pile) {
 
 function displayText() {
     document.getElementById('display').style.visibility = 'hidden';
-    const text = `Pile C Text: Example ${Math.random()}`; // Replace this with your text logic
+    //const text = `Pile C Text: Example ${Math.random()}`; // Replace this with your text logic
     document.getElementById('textDisplay').innerText = text;
 }
 
