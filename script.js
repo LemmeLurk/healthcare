@@ -42,7 +42,7 @@ function loadContent(pile) {
 
 function displayText() {
     toggleDisplay('off');
-    document.getElementById('textDisplay').innerText = text[Math.floor(Math.random() * text.length)];
+    document.getElementById('textDisplay').innerText = text.splice(0);
 }
 
 document.getElementById('display').addEventListener('click', () => {
