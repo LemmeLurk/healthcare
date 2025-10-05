@@ -26,6 +26,7 @@ function shuffleArray(array) {
 function toggleDisplay(toggle) {
     const element = document.getElementById('display');
     element.style.display = (toggle === 'off') ? 'none' : 'block';
+    document.body.style.cursor = (toggle === 'off') ? 'none' : 'auto';
 }
 
 function getPileBasedOnTime() {
