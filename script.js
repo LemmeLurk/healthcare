@@ -59,7 +59,7 @@ document.getElementById('display').addEventListener('click', () => {
     }
 });
 
-document.getElementById('display').addEventListener('onmouseover', () => {
+document.getElementById('display').addEventListener('mouseover', () => {
     document.body.style.cursor = 'auto';
 });
 
