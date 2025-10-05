@@ -1,7 +1,6 @@
 const IMAGES = 17;
 let currentPile = '';
 let displayCount = 0;
-let count2 = 0;
 
 function shuffleArray(array) {
   let currentIndex = array.length;
@@ -59,6 +58,12 @@ document.getElementById('display').addEventListener('click', () => {
         }, 5000); // Show text for 5 seconds
     }
 });
+
+document.getElementById('display').addEventListener('onmouseover', () => {
+    document.body.style.cursor = 'auto';
+});
+
+document.body.style.cursor = 'none';
 
 // Initial Load
 loadContent(getPileBasedOnTime());
