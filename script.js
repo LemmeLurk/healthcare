@@ -1,4 +1,4 @@
-const IMAGES = 17;
+const IMAGES = 27;
 let currentPile = '';
 let displayCount = 0;
 
